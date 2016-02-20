@@ -14,3 +14,4 @@ Next steps:
 * update timer
 * tie enter to add button
 * add nice font stacks
+* testing
