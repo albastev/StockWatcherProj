@@ -1,0 +1,55 @@
+
+#display > .tile > .right-side {
+  display:none;
+}
+
+body > #display {
+  text-align: center;
+}
+
+body > header > #stock-in {
+  height: 30px;
+  width: 200px;
+  padding-left: 20px;
+}
+
+body > header > #add-stock {
+  background-color: #73ad21;
+  color: white;
+  height: 40px;
+  width: 60px;
+}
+
+#display > .tile .left-side {
+  height: 60px;
+}
+
+.tile > .left-side > h1.name {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+}
+
+.tile > .left-side > h2.symbol {
+  top: 25px;
+}
+
+#display > .tile {
+  width: 275px;
+  margin: 10px;
+  height: 60px;
+  display: inline-flex;
+  position: relative;
+}
+
+.tile > .left-side > section.change {
+  top: 10px;
+  left: 170px;
+  position: absolute;
+}
+
+.tile > .left-side > section.price {
+  top: 30px;
+  left: 170px;
+  position: absolute;
+}

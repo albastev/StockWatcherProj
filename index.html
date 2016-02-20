@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Stock Tracker</title>
+  <meta content="Simple application to track changes in stocks selected by symbol." name="description">
+  <link type="text/css" rel="stylesheet" href="./css/main.css">
+  <link type="text/css" rel="stylesheet" media="screen and (max-width: 700px)" href="./css/narrow.css">
+  <link type="text/css" rel="stylesheet" media="screen and (min-width: 701px)" href="./css/wide.css">
+</head>
+<body>
+  <header>
+    <h1>Stock Watcher</h1>
+    <input id="stock-in" type="text" autofocus="true" value="" placeholder="Enter stock symbol&hellip;">
+    <button id="add-stock" onclick="Manager.add_stock();">Add</button>
+    <output id="feedback"></output>
+  </header>
+  <section id="display">
+    No stocks yet!
+  </section>
+  <script src="./views/tile.js" type="text/JavaScript"></script>
+  <script src="./views/hilo-scale.js" type="text/JavaScript"></script>
+  <script src="./behavior/ajax.js" type="text/JavaScript"></script>
+  <script src="./behavior/manage-stocks.js" type="text/JavaScript"></script>
+  <script src="./behavior/update-stocks.js" type="text/JavaScript"></script>
+</body>
+</html>
