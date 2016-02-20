@@ -13,3 +13,4 @@ Next steps:
 * delete stock button on the tiles
 * update timer
 * tie enter to add button
+* add nice font stacks
