@@ -82,7 +82,7 @@ Views.tile = function(model){
   this.closer.className = 'closer';
   this.closer.innerHTML = '✖';
   this.closer.setAttribute('onclick','Manager.remove_stock(\'' + model.Symbol + '\');');
-  this.rs.appendChild(this.closer);
+  this.element.appendChild(this.closer);
 
   // call the hilo-scale template
   this.hilo = new Views.hilo_scale(model);
