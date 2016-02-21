@@ -59,6 +59,7 @@ function query_stocks(stocks,callback){
   var request = host + '?' + yql + '&' + env + '&' + format;
 
   sendAjaxRequest(request,callback,request_error);
+  return true;
 }
 
 
