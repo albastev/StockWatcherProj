@@ -30,20 +30,28 @@ var Manager = {
     query_stocks(el.value, Manager.process_stocks)
   },
   remove_stock : function(stock){
+    console.log('remove');
     // in case we want to implement a remove button
     if(!stock)return false;
-
+    console.log(1)
     if(stock.model){
       stock = stock.model;
+    }else if(stock.charAt && this.stock_hash[stock]){
+      stock = this.stock_hash[stock];
     }
-
+    console.log(2,stock)
+    if(!stock.model){
+      return false;
+    }
     // remove rendered tile
-    if(stock.id && his.stock_hash[stock.id]){
+    if(stock.id && this.stock_hash[stock.id]){
+      console.log('removeElement')
       var el = this.stock_hash[stock.id].element;
       el.parentNode.removeChild(el);
       delete this.stock_hash[stock.id];
     }
     // remove from STOCKS and store in localStorage
+    console.log('remove data')
     var idx = STOCKS.indexOf(stock.id);
     if(idx>=0)STOCKS.splice(idx,1);
 

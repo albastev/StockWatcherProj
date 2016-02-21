@@ -78,6 +78,12 @@ Views.tile = function(model){
   this.price.innerHTML = '$'+model.LastTradePriceOnly;
   this.ls.appendChild(this.price);
 
+  this.closer = document.createElement('button');
+  this.closer.className = 'closer';
+  this.closer.innerHTML = '✖';
+  this.closer.setAttribute('onclick','Manager.remove_stock(\'' + model.Symbol + '\');');
+  this.rs.appendChild(this.closer);
+
   // call the hilo-scale template
   this.hilo = new Views.hilo_scale(model);
   this.rs.appendChild(this.hilo.element);

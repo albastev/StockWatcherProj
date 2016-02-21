@@ -38,6 +38,23 @@ body, #display, header {
   position: relative;
 }
 
+.tile .closer {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+}
+
+.tile:hover .closer {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+.tile:hover .closer:hover {
+  opacity: 1;
+}
+
 .tile .left-side {
   width:150px;
   height:120px;
