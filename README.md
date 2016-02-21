@@ -10,7 +10,6 @@ We may want to add a library to decrease likelihood of browser incompatibility.
 
 Next steps:
 
-* delete stock button on the tiles
 * update timer
 * tie enter to add button
 * add nice font stacks
